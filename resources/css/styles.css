@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --green : #40EC7B;
+    --medium-green : #7DF39E;
+    --lower-green : #DFE8E2;
+    --strong-green: #55936A;
+    --medium-green-two: #BBE4AC;
+    --green-logo : #49D479;
+}
+
 nav{
     display: flex;
     width: 100%;
