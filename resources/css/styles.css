@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --green : #40EC7B;
+    --medium-green : #7DF39E;
+    --lower-green : #DFE8E2;
+    --strong-green: #55936A;
+    --medium-green-two: #BBE4AC;
+    --green-logo : #49D479;
+}
+
 nav{
     
 }
@@ -8,4 +21,27 @@ nav{
   height: 5em;
   width: 100%;
   background-color: aqua;
+    display: flex;
+    width: 100%;
+    background: green;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.burger{
+    margin-right:10px;
 }
