@@ -1,31 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNotes</title>
-    <link rel="stylesheet" href="resources/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d229e9ff7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav class="nav">
-        <img src="/resources/assets/logo-unotes.svg" alt="pues">
-        <ul>
-            <a href="#"><li>Materias</li></a>
-            <a href="#"><li>Otros</li></a>
-        </ul>
-        <svg class="burger" style="width: 50px; height:100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      <img src="/resources/assets/logo-unotes.svg" alt="pues" />
+      <ul>
+        <a href="#"><li>Materias</li></a>
+        <a href="#"><li>Otros</li></a>
+      </ul>
+      <svg
+        class="burger"
+        style="width: 50px; height: 100px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
     </nav>
+
+    <div class="calendario"></div>
+
     <div class="notes-container">
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="note-card">
+        <header class="note-card__header">
+          <span class="note-card__title">cabecera</span>
+          <div class="note-card__actions">
+            <i class="fa-solid fa-pen-to-square"></i
+            ><i class="fa-solid fa-trash-can"></i>
+          </div>
+        </header>
+        <div class="note-card__main">
+          <h3 class="note-card__main-title">Titulo</h3>
+          <p class="note-card__main-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            doloremque, nemo, consequuntur quod corrupti est debitis iure
+            voluptate ipsum saepe iusto dolor. Quae consequuntur animi, labore
+            nam error, aspernatur illum tempora magni laudantium quibusdam
+            repudiandae accusantium vero eveniet qui inventore praesentium nemo
+            saepe? Explicabo, dolorem enim. Consequuntur molestias obcaecati
+            possimus exercitationem esse, doloribus ratione autem vel asperiores
+            est! Inventore porro, fuga iste odio eaque magnam veniam pariatur
+            ipsam totam vel minus voluptatem perferendis obcaecati voluptate!
+            Accusantium velit modi temporibus voluptas rerum numquam asperiores,
+            voluptates, praesentium vero distinctio animi quae iste
+            exercitationem esse quo dolorum. Maiores veritatis pariatur quae
+            iusto deserunt.
+          </p>
+        </div>
+      </div>
+
+
 
     </div>
-
-<div class="calendario">
-
-</div>
-
-
-
-</body>
-<script src="./resources/js/index.html"></script>
+  </body>
+  <script src="./resources/js/index.html"></script>
 </html>

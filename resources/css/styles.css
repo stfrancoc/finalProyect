@@ -1,47 +1,105 @@
 * {
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --green : #40EC7B;
-    --medium-green : #7DF39E;
-    --lower-green : #DFE8E2;
-    --strong-green: #55936A;
-    --medium-green-two: #BBE4AC;
-    --green-logo : #49D479;
+  --green: #40ec7b;
+  --medium-green: #7df39e;
+  --lower-green: #dfe8e2;
+  --strong-green: #55936a;
+  --medium-green-two: #bbe4ac;
+  --green-logo: #49d479;
 }
 
-nav{
-    
+nav {
 }
-
 
 .calendario {
-  display: grid ;
+  display: grid;
   height: 5em;
   width: 100%;
   background-color: aqua;
-    display: flex;
+  display: flex;
+  width: 100%;
+  background: green;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.burger {
+  margin-right: 10px;
+}
+
+/*
+Note Cards
+*/
+.notes-container {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.note-card {
     width: 100%;
-    background: green;
+    height: 300px;
+    margin-top: 20px;
+    border-radius:0 0 30px 0;
+    background-color: var(--lower-green);
+}
+
+.note-card__header {
+    background-color: var(--strong-green);
+    height: 50px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;        
+}
+
+.note-card__title {
+    margin-left: 8px;
+}
+
+.note-card__actions {
+    margin-right: 4px;
+    width: 40px;
+    display: flex;
     justify-content: space-between;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.note-card__actions i{
+    color: #FFFFFF;        
 }
 
-li{
-    list-style: none;
+.note-card__main {
+    height:220px;
+    padding: 16px;
+    overflow-y: scroll; 
 }
 
-a{
-    text-decoration: none;
-    color:white;
+.note-card__main-title{
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 10px;
 }
 
-.burger{
-    margin-right:10px;
+.note-card__main-content {
+    padding: 4px;
 }
