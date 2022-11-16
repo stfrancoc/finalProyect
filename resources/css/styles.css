@@ -1,76 +1,211 @@
 * {
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --green : #40EC7B;
-    --medium-green : #7DF39E;
-    --lower-green : #DFE8E2;
-    --strong-green: #55936A;
-    --medium-green-two: #BBE4AC;
-    --green-logo : #49D479;
+  --green: #40ec7b;
+  --medium-green: #7df39e;
+  --lower-green: #dfe8e2;
+  --strong-green: #55936a;
+  --medium-green-two: #bbe4ac;
+  --green-logo: #49d479;
 }
 
-.nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,236,123,1) 0%, rgba(0,212,255,0) 88%);
-    align-items: center;
-    height: 8vh;
-    position: relative;
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(64, 236, 123, 1) 0%,
+    rgba(0, 212, 255, 0) 88%
+  );
+  align-items: center;
+  height: 8vh;
+  position: sticky;
+  top: 0;
 }
 
-
-
-.logo{
-    margin-left: 10px;
+.logo {
+  margin-left: 10px;
 }
 
 .calendario {
-  display: grid ;
+  display: grid;
   height: 5em;
   width: 100%;
   background-color: aqua;
-    display: flex;
-    width: 100%;
-    background: green;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  background: green;
+  justify-content: space-between;
 }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.burger{
-    margin-right:10px;
-    width: 40px;
-    height: 40px;
+.burger {
+  margin-right: 15px;
+  font-size: 40px;
+  color: var(--green);
 }
 
-.options{
-    position: absolute;
-    width: 97.3vw;
-    display: flex;
-    flex-direction: column;
-    top: 8vh;
-    background: var(--medium-green);
-    padding: 10px;
-    border: 1px solid #55936A;
+.options {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  top: 8vh;
+  background: var(--medium-green);
+  padding: 10px;
+  border: 1px solid #55936a;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Note Cards
+*/
+.notes-container {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.note-card {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 0 0 30px 0;
+  background-color: var(--lower-green);
+}
+
+.note-card__header {
+  background-color: var(--strong-green);
+  height: 50px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.note-card__title {
+  margin-left: 8px;
+}
+
+.note-card__actions {
+  margin-right: 4px;
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-card__actions i {
+  color: #ffffff;
+}
+
+.note-card__main {
+  height: 220px;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+.note-card__main-title {
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.note-card__main-content {
+  padding: 4px;
 }
