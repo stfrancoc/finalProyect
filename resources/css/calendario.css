@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --green: #40ec7b;
+    --medium-green: #7df39e;
+    --lower-green: #dfe8e2;
+    --strong-green: #55936a;
+    --medium-green-two: #bbe4ac;
+    --green-logo: #49d479;
+}
+
+.contenedor {
+    background-color: rgba(0, 195, 195);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    overflow-x: scroll;
+    margin-left: 2em;
+    height: 50vh;
+}
+
+.dia {
+    background-color: #40ec7b;
+    height: 1em;
+    margin: 0;
+    padding-top: 0;
+}
+
+.hora {
+    background-color: aqua;
+    height: 1em;
+    margin: 0.2em;
+    width: 10vw;
+}
+
+.hora > div {
+    height: 2em;
+    margin: 0.2em;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.dia > div {
+    height: 2em;
+    margin: 0;
+    background-color: rgb(205, 205, 205);
+    border-style: solid;
+    border-width: 1px;
+    width: 90vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger {
+    margin-right: 10px;
+}
+
+@media (min-width: 300px) {
+    .dia > div {
+        width: 45vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .dia > div {
+        width: 30vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .dia > div {
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dia > div {
+        width: 15vw;
+    }
+}
