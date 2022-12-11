@@ -1,3 +1,5 @@
+@import url('./calendario.css');
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -177,6 +179,7 @@ Note Cards
   padding: 4px;
 }
 
+/*Other styles*
 .block-scroll{
   overflow: hidden;
 }

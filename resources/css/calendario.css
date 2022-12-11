@@ -1,0 +1,67 @@
+.calendar-container {
+    background-color: rgba(0, 195, 195);
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 70px  300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: repeat(17, 1fr);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.calendar-container__horaTitle{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: brown;
+}
+
+.calendar__days-container {
+    background-color: antiquewhite;
+    grid-column: 2/9;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+    position: sticky;
+    top: 0;
+}
+
+.calendar__scheduleBody-container{
+    background-color: green;
+    grid-column: 1/9;
+    grid-row: 2/18;
+
+    display: grid;
+    grid-template-columns: 70px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: repeat(1fr, 16);
+    background-color: aqua;
+}
+
+.calendar__hours-container{
+    background-color: rgb(32, 0, 128);
+    grid-column: 1/2;
+    grid-row: 1/18;
+    
+    position: sticky;
+    left: 0;
+
+    display: grid;
+    grid-template-rows: repeat(1fr, 16);
+}
+
+.calendar__classes-container {
+    background-color: rgb(43, 164, 106);
+    grid-column: 2/9;
+    grid-row: 1/18;
+
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+}
+
+.center {
+    text-align: center;
+    padding: 0.5rem;
+    border: solid black thin;
+}
