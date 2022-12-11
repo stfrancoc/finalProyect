@@ -180,3 +180,20 @@ Note Cards
 .block-scroll{
   overflow: hidden;
 }
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+#class_search{
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px grey;
+  padding: 0.5rem;
+}
+
+.quitar{
+  display: none;
+}
