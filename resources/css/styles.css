@@ -1,6 +1,6 @@
-@import url('./calendar.css');
-@import url('/resources/css/note-card.css');
-@import url('/resources/css/icon-plus.css');
+@import url("./calendar.css");
+@import url("/resources/css/note-card.css");
+@import url("/resources/css/plus-icon.css");
 
 * {
   margin: 0;
@@ -27,8 +27,36 @@
   top: 0;
 }
 
+.main {
+  padding: 1rem 1rem 0 1rem;
+  overflow-y: scroll;
+  height: 75vh;
+  width: 100%;
+  transition: opacity 250ms linear;
+}
+
+.main-disabled {
+  pointer-events: none;
+  opacity: 0.04;
+}
+
+.block-scroll {
+  overflow: hidden;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.none {
+  display: none;
+}
+
+/*---------------------------------------------------*/
 .nav {
-  position: absolute;  
+  position: absolute;
   width: 100vw;
   background: var(--strong-green);
   top: 9vh;
@@ -45,6 +73,7 @@
   width: 100%;
   border-bottom: 1px solid var(--lower-green);
 }
+
 .options a li {
   padding: 1rem;
   width: 100%;
@@ -58,7 +87,7 @@
   padding: 0;
 }
 
-.logo-wrap-a{
+.logo-wrap-a {
   height: 58px;
   width: 58px;
   border-radius: 50%;
@@ -86,36 +115,14 @@ a {
   color: white;
 }
 
-.burger, .burger-close{
+.burger,
+.burger-close {
   margin-right: 15px;
   font-size: 40px;
   color: var(--strong-green);
 }
 
-.main {
-  padding: 1rem 1rem 0 1rem;
-  overflow-y: scroll;
-  height: 75vh;
-  width: 100%;
-  transition: opacity 250ms linear;
-}
-
-.main-disabled {
-  pointer-events: none;
-  opacity: 0.04;
-}
-
-.block-scroll{
-  overflow: hidden;
-}
-
-.search-container{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-#class_search{
+#class_search {
   width: 80%;
   border: none;
   outline: 0;
@@ -124,11 +131,6 @@ a {
   background: transparent;
 }
 
-.quitar{
-  display: none;
-}
-
-
-.none{
+.quitar {
   display: none;
 }
