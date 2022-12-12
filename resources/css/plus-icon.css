@@ -15,7 +15,7 @@
 }
 
 .plus-wrap i:active {
-  color: var(--green-logo);
+  color: var(--green-plus-icon);
   transform: scale(0.8);
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
