@@ -1,0 +1,104 @@
+.calendar-container {
+    background-color: var(---strong-green);
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 70px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: repeat(17, 1fr);
+    overflow-x: scroll;
+    overflow-y: scroll;
+    position: relative;
+    min-width: 100%;
+}
+.calendar-container__horaTitle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: var(--strong-green);
+    height: 4rem;
+}
+
+.calendar__days-container {
+    background-color: var(--strong-green);
+    grid-column: 2/9;
+    grid-row: 1/2;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+    position: sticky;
+    top: 0;
+    align-items: end;
+}
+
+.calendar__scheduleBody-container {
+    grid-column: 1/9;
+    grid-row: 2/18;
+
+    display: grid;
+    grid-template-columns: 70px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: repeat(1fr, 16);
+}
+
+.calendar__hours-container {
+    background-color: var(--medium-green-two);
+    grid-column: 1/2;
+    grid-row: 1/18;
+
+    position: sticky;
+    left: 0;
+
+    display: grid;
+    grid-template-rows: repeat(1fr, 16);
+}
+
+.calendar__classes-container {
+    background-color: white;
+    grid-column: 2/9;
+    grid-row: 1/18;
+
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+}
+
+.center {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.border {
+    border: solid black thin;
+}
+
+.calendar__icon-edit {
+    position: absolute;
+    z-index: 2;
+    left: 0.5rem;
+    top: 0.5rem;
+    color: white;
+}
+
+.plus-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+}
+
+.plus-wrap i {
+    color: var(--green-logo);
+    font-size: 4rem;
+}
+
+.plus-wrap i:hover {
+    color: var(--green-logo);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}

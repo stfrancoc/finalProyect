@@ -1,27 +1,34 @@
+@import url('./calendario.css');
+@import url('/resources/css/note-card.css');
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 :root {
+  --strong-green: #55936a;
+  --green-logo: #49d479;
   --green: #40ec7b;
   --medium-green: #7df39e;
-  --lower-green: #dfe8e2;
-  --strong-green: #55936a;
   --medium-green-two: #bbe4ac;
-  --green-logo: #49d479;
+  --lower-green: #dfe8e2;
 }
 
 .header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background: linear-gradient(
+  
+  /*background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(64, 236, 123, 1) 0%,
     rgba(0, 212, 255, 0) 88%
-  );
+  );*/
+
+
+  background-color: var(--medium-green-two);
   align-items: center;
   height: 9vh;
   position: sticky;
@@ -65,7 +72,6 @@
   border-radius: 50%;
   margin-left: 10px;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .logo-wrap-a:active {
@@ -102,7 +108,7 @@ a {
 .burger {
   margin-right: 15px;
   font-size: 40px;
-  color: var(--green);
+  color: var(--strong-green);
 }
 
 /*
@@ -111,7 +117,7 @@ Note Cards
 .main {
   padding: 1rem;
   overflow-y: scroll;
-  height: 92vh;
+  height: 75vh;
   width: 100%;
   transition: opacity 250ms linear;
 }
@@ -121,6 +127,7 @@ Note Cards
   opacity: 0.04;
 }
 
+<<<<<<< HEAD
 .notes-container {
   width: 90%;
   margin: 0 auto;
@@ -197,3 +204,5 @@ Note Cards
 .quitar{
   display: none;
 }
+=======
+>>>>>>> calendar
