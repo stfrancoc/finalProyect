@@ -118,8 +118,10 @@ a {
 #class_search{
   width: 80%;
   border: none;
+  outline: 0;
   border-bottom: solid 1px grey;
   padding: 0.5rem;
+  background: transparent;
 }
 
 .quitar{
@@ -129,5 +131,4 @@ a {
 
 .none{
   display: none;
-  /* background-color: #40ec7b; */
 }
