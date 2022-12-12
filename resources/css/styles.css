@@ -8,11 +8,11 @@
 }
 
 :root {
-  --strong-green: #55936a;
-  --green-logo: #49d479;
   --green: #40ec7b;
   --medium-green: #7df39e;
   --medium-green-two: #bbe4ac;
+  --strong-green: #55936a;
+  --green-plus-icon: #49d479;
   --lower-green: #dfe8e2;
 }
 
