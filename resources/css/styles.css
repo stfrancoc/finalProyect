@@ -22,7 +22,8 @@
   justify-content: space-between;
   background-color: var(--medium-green-two);
   align-items: center;
-  height: 9vh;
+  min-height: 9vh;
+  padding: 0.5rem 0 0.5rem 0;
   position: sticky;
   top: 0;
 }
@@ -44,17 +45,18 @@
   overflow: hidden;
 }
 
+.none {
+  display: none;
+}
+
+/*---------------------------------------------------*/
+
 .search-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
 }
 
-.none {
-  display: none;
-}
-
-/*---------------------------------------------------*/
 .nav {
   position: absolute;
   width: 100vw;
