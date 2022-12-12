@@ -86,7 +86,7 @@ a {
   color: white;
 }
 
-.burger {
+.burger, .burger-close{
   margin-right: 15px;
   font-size: 40px;
   color: var(--strong-green);
@@ -124,4 +124,10 @@ a {
 
 .quitar{
   display: none;
+}
+
+
+.none{
+  display: none;
+  /* background-color: #40ec7b; */
 }
