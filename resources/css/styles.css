@@ -3,6 +3,8 @@
 @import url("/resources/css/plus-icon.css");
 @import url("/resources/css/header.css");
 @import url("/resources/css/editNote.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 
 * {
   margin: 0;
@@ -16,6 +18,8 @@
   --strong-green: #55936a;
   --green-plus-icon: #49d479;
   --lower-green: #dfe8e2;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .main {
