@@ -25,9 +25,23 @@
 }
 
 .form-buttons{
+    margin-top: 2rem;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.form-buttons button {
+    outline: none;
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: transform 100ms;
+}
+
+.form-buttons button:active {
+    transform: scale(0.8);
 }
 
 .btn-a-cancel{
@@ -37,13 +51,6 @@
 .tamHeight{
     height: 90vh;
     display: flex;
-}
-
-.form-buttons{
-    margin-top: 2rem;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .form-editor-titulo{
