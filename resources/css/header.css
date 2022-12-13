@@ -18,7 +18,7 @@
   position: absolute;
   width: 100vw;
   background: var(--strong-green);
-  top: 10vh;
+  top: 9vh;
   transition: height 250ms linear;
   height: 0vh;
   overflow-y: scroll;
