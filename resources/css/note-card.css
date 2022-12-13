@@ -14,13 +14,21 @@
 }
 
 .note-card__header {
-  background-color: var(--strong-green);
+  /* background-color: var(--strong-green); */
   height: 50px;
   padding: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
+}
+
+.strong-green {
+  background-color: var(--strong-green);
+}
+
+.green-plus-icon {
+  background-color: var(--green-plus-icon);
 }
 
 .note-card__title {
@@ -36,6 +44,12 @@
 
 .note-card__actions i {
   color: #ffffff;
+  transition: transform 100ms;
+  font-size: 1.3rem;
+}
+
+.note-card__actions i:active {
+  transform: scale(0.8);
 }
 
 .note-card__main {
