@@ -2,6 +2,7 @@
 @import url("/resources/css/note-card.css");
 @import url("/resources/css/plus-icon.css");
 @import url("/resources/css/header.css");
+@import url("/resources/css/editNote.css");
 
 * {
   margin: 0;

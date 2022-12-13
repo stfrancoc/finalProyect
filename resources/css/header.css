@@ -10,6 +10,10 @@
   top: 0;
 }
 
+.height{
+  height: 91vh;
+}
+
 .nav {
   position: absolute;
   width: 100vw;
